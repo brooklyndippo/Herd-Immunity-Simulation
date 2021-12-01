@@ -1,5 +1,4 @@
 import random, sys
-random.seed(42)
 from person import Person
 from logger import Logger
 from virus import Virus
@@ -34,6 +33,9 @@ class Simulation(object):
         # Remember to call the appropriate logger method in the corresponding parts of the simulation.
         # TODO: Call self._create_population() and pass in the correct parameters.
         # Store the array that this method will return in the self.population attribute.
+
+
+
         # TODO: Store each newly infected person's ID in newly_infected attribute.
         # At the end of each time step, call self._infect_newly_infected()
         # and then reset .newly_infected back to an empty list.
@@ -48,10 +50,27 @@ class Simulation(object):
         self.vacc_percentage = vacc_percentage # float between 0 and 1
         self.total_dead = 0 # Int
         self.file_name = "{}_simulation_pop_{}_vp_{}_infected_{}.txt".format(
-            virus_name, population_size, vacc_percentage, initial_infected)
+            virus_name, pop_size, vacc_percentage, initial_infected)
         self.newly_infected = []
 
-    def _create_population(self, initial_infected):
+    def _create_population(self):
+        person_id = 1
+        while person_id < (self.pop_size + 1) :
+            while person_id < (self.initial_infected + 1):
+                person = Person(person_id, False, self.virus)
+                self.population.append(person)
+                person_id += 1
+            is_vaccinated = (random.randint(0, 1) <= self.vacc_percentage)
+            person = Person(person_id, is_vaccinated)
+            self.population.append(person)
+            person_id += 1
+        for person in self.population:
+            print (person._id)
+            print (person.is_vaccinated)
+            print (person.virus)
+        print(len(self.population))
+        return self.population
+
         '''This method will create the initial population.
             Args:
                 initial_infected (int): The number of infected people that the simulation
@@ -85,6 +104,7 @@ class Simulation(object):
         ''' This method should run the simulation until all requirements for ending
         the simulation are met.
         '''
+        self._create_population()
         # TODO: Finish this method.  To simplify the logic here, use the helper method
         # _simulation_should_continue() to tell us whether or not we should continue
         # the simulation and run at least 1 more time_step.
@@ -155,7 +175,7 @@ class Simulation(object):
 if __name__ == "__main__":
     params = sys.argv[1:]
     virus_name = str(params[0])
-    repro_num = float(params[1])
+    repro_rate = float(params[1])
     mortality_rate = float(params[2])
 
     pop_size = int(params[3])
@@ -166,7 +186,12 @@ if __name__ == "__main__":
     else:
         initial_infected = 1
 
-    virus = Virus(name, repro_rate, mortality_rate)
-    sim = Simulation(pop_size, vacc_percentage, initial_infected, virus)
+    virus = Virus(virus_name, repro_rate, mortality_rate)
+    sim = Simulation(virus, pop_size, vacc_percentage, initial_infected)
+
+    #stretch goal - Prompt to enter each of these attributes individually
 
     sim.run()
+
+# call the function: VIRUS NAME (str), REPRODUCTION RATE (float), MORTALITY (float), POPULATION (int), VACC PERCENTAGE (float), INITIAL INFECTED (int)
+# python3 simulation.py 'Covid' .3 .2 10 .2 2
