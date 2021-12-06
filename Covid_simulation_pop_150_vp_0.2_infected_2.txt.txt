@@ -1,0 +1,266 @@
+HERD IMMUNITY SIMULATION
+
+
+----- VIRUS STATS -----
+Virus: Covid
+Reproduction Rate: 30.0%
+Mortality Rate: 20.0%
+
+--- POPULATION STATS ---
+Population: 150
+Vaccination Rate: 20.0%
+Initial Infections: 2
+HERD IMMUNITY SIMULATION
+
+
+----- VIRUS STATS -----
+Virus: Covid
+Reproduction Rate: 30.0%
+Mortality Rate: 20.0%
+
+--- POPULATION STATS ---
+Population: 150
+Vaccination Rate: 20.0%
+Initial Infections: 2
+HERD IMMUNITY SIMULATION
+
+
+----- VIRUS STATS -----
+Virus: Covid
+Reproduction Rate: 30.0%
+Mortality Rate: 20.0%
+
+--- POPULATION STATS ---
+Population: 150
+Vaccination Rate: 20.0%
+Initial Infections: 2
+HERD IMMUNITY SIMULATION
+
+
+----- VIRUS STATS -----
+Virus: Covid
+Reproduction Rate: 30.0%
+Mortality Rate: 20.0%
+
+--- POPULATION STATS ---
+Population: 150
+Vaccination Rate: 20.0%
+Initial Infections: 2
+
+
+*** INTERACTION ***
+1 did not infect 55 because they are vaccinated.
+
+
+*** INTERACTION ***
+1 has infected 125.
+
+
+*** INTERACTION ***
+1 has infected 18.
+
+     INFECTION OUTCOME:
+     18 did not survive the infection.
+
+
+*** INTERACTION ***
+2 did not infect 100 because they are vaccinated.
+
+
+*** INTERACTION ***
+2 did not infect 131 because they are vaccinated.
+
+
+*** INTERACTION ***
+2 did not infect 143 because they are vaccinated.
+HERD IMMUNITY SIMULATION
+
+
+----- VIRUS STATS -----
+Virus: Covid
+Reproduction Rate: 30.0%
+Mortality Rate: 20.0%
+
+--- POPULATION STATS ---
+Population: 150
+Vaccination Rate: 20.0%
+Initial Infections: 2
+
+
+*** INTERACTION ***
+1 has infected 17.
+
+     INFECTION OUTCOME:
+     17 did not survive the infection.
+
+
+*** INTERACTION ***
+1 has infected 102.
+
+     INFECTION OUTCOME:
+     102 did not survive the infection.
+
+
+*** INTERACTION ***
+1 did not infect 56 because they are vaccinated.
+HERD IMMUNITY SIMULATION
+
+
+----- VIRUS STATS -----
+Virus: Covid
+Reproduction Rate: 30.0%
+Mortality Rate: 20.0%
+
+--- POPULATION STATS ---
+Population: 150
+Vaccination Rate: 20.0%
+Initial Infections: 2
+HERD IMMUNITY SIMULATION
+
+
+----- VIRUS STATS -----
+Virus: Covid
+Reproduction Rate: 30.0%
+Mortality Rate: 20.0%
+
+--- POPULATION STATS ---
+Population: 150
+Vaccination Rate: 20.0%
+Initial Infections: 2
+HERD IMMUNITY SIMULATION
+
+
+----- VIRUS STATS -----
+Virus: Covid
+Reproduction Rate: 30.0%
+Mortality Rate: 20.0%
+
+--- POPULATION STATS ---
+Population: 150
+Vaccination Rate: 20.0%
+Initial Infections: 2
+
+
+*** INTERACTION ***
+1 did not infect 75 because they are vaccinated.
+
+
+*** INTERACTION ***
+1 did not infect 150 because they are vaccinated.
+
+
+*** INTERACTION ***
+1 did not infect 23 because they are vaccinated.
+
+
+*** INTERACTION ***
+2 has infected 12.
+
+
+*** INTERACTION ***
+2 did not infect 45 because they are vaccinated.
+
+
+*** INTERACTION ***
+2 has infected 27.
+
+     INFECTION OUTCOME:
+     27 survived and has natural immunity now.
+
+
+*** INTERACTION ***
+27 did not infect 23 because they are vaccinated.
+
+
+*** INTERACTION ***
+27 has infected 14.
+HERD IMMUNITY SIMULATION
+
+
+----- VIRUS STATS -----
+Virus: Covid
+Reproduction Rate: 30.0%
+Mortality Rate: 20.0%
+
+--- POPULATION STATS ---
+Population: 150
+Vaccination Rate: 20.0%
+Initial Infections: 2
+
+
+*** INTERACTION ***
+1 did not infect 56 because they are vaccinated.
+
+
+*** INTERACTION ***
+1 did not infect 122 because they are vaccinated.
+
+
+*** INTERACTION ***
+1 did not infect 149 because they are vaccinated.
+
+
+*** INTERACTION ***
+2 did not infect 30 because they are vaccinated.
+
+
+*** INTERACTION ***
+2 has infected 92.
+
+     INFECTION OUTCOME:
+     92 survived and has natural immunity now.
+
+
+*** INTERACTION ***
+2 has infected 86.
+
+     INFECTION OUTCOME:
+     86 did not survive the infection.
+
+
+*** INTERACTION ***
+92 did not infect 132 because they are vaccinated.
+
+
+*** INTERACTION ***
+92 did not infect 8 because they are vaccinated.
+
+
+*** INTERACTION ***
+92 did not infect 122 because they are vaccinated.
+HERD IMMUNITY SIMULATION
+
+
+----- VIRUS STATS -----
+Virus: Covid
+Reproduction Rate: 30.0%
+Mortality Rate: 20.0%
+
+--- POPULATION STATS ---
+Population: 150
+Vaccination Rate: 20.0%
+Initial Infections: 2
+
+
+*** INTERACTION ***
+1 has infected 67.
+
+
+*** INTERACTION ***
+1 did not infect 115 because they are vaccinated.
+
+
+*** INTERACTION ***
+1 has infected 8.
+
+
+*** INTERACTION ***
+2 did not infect 130 because they are vaccinated.
+
+
+*** INTERACTION ***
+2 did not infect 61 because they are vaccinated.
+
+
+*** INTERACTION ***
+2 did not infect 145 because they are vaccinated.

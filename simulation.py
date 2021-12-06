@@ -2,6 +2,7 @@ import random, sys
 from person import Person
 from logger import Logger
 from virus import Virus
+import threading
 
 
 class Simulation(object):
@@ -61,22 +62,29 @@ class Simulation(object):
                 self.total_immune += 1 # add vaccinated people to total immune
         return self.population
 
-
     def _simulation_should_continue(self):
-        if self.total_dead + self.total_immune == self.pop_size:
+        herd_immunity = 1 - 1/(10*self.virus.repro_rate/(1 - self.virus.mortality_rate)) 
+
+
+        if self.total_immune >= (herd_immunity* len(self.population)):
+            print(False)
+            return False
+        elif self.current_infected == 0:
+            print(False)
             return False
         else:
             return True
 
     def run(self):
         ''' Run the simulation'''
-        while self._simulation_should_continue():
+        while self._simulation_should_continue() == True:
             self.time_step()
+        print('STOP SIMULATION')
 
     def time_step(self):
         for person in self.current_infected:
             print(person._id)
-            random_people = random.sample(self.population, 3)
+            random_people = random.sample(self.population, 10)
             for random_person in random_people:
                 self.interaction(person, random_person)
             self.current_infected.remove(person)
@@ -85,7 +93,7 @@ class Simulation(object):
             
 
     def interaction(self, person, random_person):
-        #print('interaction')
+        print('interaction')
         assert person.is_alive == True
         assert random_person.is_alive == True
 
