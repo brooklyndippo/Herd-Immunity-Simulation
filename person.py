@@ -17,9 +17,13 @@ class Person(object):
         if self.virus: 
             random_mortality = random.randint(0,1)
             if random_mortality <= self.virus.mortality_rate:
+                print(f'{self._id} died')
                 self.is_alive = False
+                return False
             else:
                 self.natural_immunity = True
+                self.virus = None
+                return True
         
 
 ''' These are simple tests to ensure that you are instantiating your Person class correctly. '''
