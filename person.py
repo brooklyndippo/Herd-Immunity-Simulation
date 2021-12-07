@@ -15,8 +15,8 @@ class Person(object):
 
     def did_survive_infection(self):
         if self.virus: 
-            random_mortality = random.randint(0,1)
-            if random_mortality <= self.virus.mortality_rate:
+            random_mortality = random.random()
+            if random_mortality < self.virus.mortality_rate:
                 print(f'{self._id} died')
                 self.is_alive = False
                 return False
